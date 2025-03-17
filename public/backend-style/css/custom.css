@@ -1,0 +1,50 @@
+.error-message{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  vertical-align: middle !important;
+}
+.uk-flex-space-between{
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.uk-flex-middle{
+    -ms-flex-align: center;
+    -webkit-align-item: center;
+    align-items: center;
+}
+.uk-flex{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.filter-wrapper .perpage{
+    display: inline-block;
+}
+.filter-wrapper{
+    margin-bottom: 20px;
+}
+.filter-wrapper .form-control{
+    height: 32px;
+    max-width: 200px;
+    font-size: 13px;
+}
+.btn{
+    margin-bottom: 0 !important;
+    font-size: 13px;
+    border-radius: 0;
+    height: 32px;
+}
+.mr10{
+    margin-right: 10px;
+}
