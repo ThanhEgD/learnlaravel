@@ -16,8 +16,12 @@ Route::get('/', function () {
 //Backend route
 Route::get('dashboard/index', [DashboardController::class, 'index'])->name('dashboard.index')->middleware(AuthenticateMiddleware::class);
 
-//User
-Route::get('user/index', [UserController::class, 'index'])->name('user.index')->middleware(AuthenticateMiddleware::class);
+//-------USER--------
+Route::group(['prefix' => 'user'], function(){
+    Route::get('index', [UserController::class, 'index'])->name('user.index')->middleware(AuthenticateMiddleware::class);
+    Route::get('create', [UserController::class, 'create'])->name('user.create')->middleware(AuthenticateMiddleware::class);
+});
+
 
 Route::get('admin', [AuthController::class, 'index'])->name('auth.admin')->middleware(LogoutMiddleware::class);
 
